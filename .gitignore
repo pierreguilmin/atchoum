@@ -1,0 +1,3 @@
+# misc/ folder
+misc/**
+!misc/.gitkeep
