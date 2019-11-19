@@ -17,8 +17,10 @@ Such forms are used when one needs `n` persons to be assigned to `k` categories 
 ### Core specifications
 - Form parameters:
   - the `k` categories name
-  - which optimization algorithm to use
   - the number `l` of wishes per person
+  - the integer vector `v` defining the maximum number of persons accepted for each category
+  - which optimization algorithm to use
+  
   - ...
 - Forms can be shared to participants in easy and various ways.
 - Web-app.
