@@ -20,36 +20,43 @@ Such forms are used when one needs `n` persons to be assigned to `k` categories 
   - the number `l` of wishes per person
   - the integer vector `v` defining the maximum number of persons accepted for each category
   - which optimization algorithm to use
-  
   - ...
-- Forms can be shared to participants in easy and various ways.
+- Forms can be shared to participants in easy and various ways (see the [Form sharing options](#form-sharing-options) section).
 - Web-app.
+- Anyone can create forms and share them, but they need an account on the website to do so.
 
 ### Role-based access control (roles and permissions)
 Three different roles described underneath: **administrator** (later called *admin*), **support** and **participant**.
 
-|                                     | Admin              | Support            | Participant |
-| ----------------------------------- | :----------------: | :----------------: | :---------: |
-| Form creation                       | :white_check_mark: |                    |             |
-| Form parameters                     | :white_check_mark: |                    |             |
-| Form modification                   | :white_check_mark: | :question:         |             |
-| Form closing                        | :white_check_mark: | :question:         |             |
-| Share the form to a given email     | :white_check_mark: | :white_check_mark: |             |
-| Form results by participant - live* | :white_check_mark: | :white_check_mark: |             |
-| Form results by participant         | :white_check_mark: | :white_check_mark: | :question:  |
+|                                      | Admin              | Support            | Participant |
+| ------------------------------------ | :----------------: | :----------------: | :---------: |
+| Form creation                        | :white_check_mark: |                    |             |
+| Form parameters                      | :white_check_mark: |                    |             |
+| Change user role*                    | :white_check_mark: |                    |             |
+| Form modification                    | :white_check_mark: | :question:         |             |
+| Form closing                         | :white_check_mark: | :question:         |             |
+| Share the form to a given email      | :white_check_mark: | :white_check_mark: |             |
+| Form results by participant - live** | :white_check_mark: | :white_check_mark: |             |
+| Form results by participant          | :white_check_mark: | :white_check_mark: | :question:  |
 
 :white_check_mark: : can do  
 :question: : admin dependent  
-*\* live means that the form has not yet been closed by the admin*
+*\* for example, a support can become an admin (so we can have multiple admins for a single form)*  
+*\*\* live means that the form has not yet been closed by the admin*
+
+### Accounts
+Every admin needs to have an account on the website.  
+Supports and participants don't need to create an account.
 
 ### Form sharing options
 How does an admin or a support share the form to participants ?
 - Issue with a link: how do you uniquely identify someone who uses the link to access the form?
 - Send an email to a list of email adresses.
+- QR Code (then you can send a picture to someone instead of a link).
 
-### Additional functionalities
+## Additional functionalities
 - Categories description or even caterogies name can have images, formated text, ...
-- Statistics after the repartition (worst selected wich number, mean selected wich number, ...).
+- Statistics after the repartition (worst selected wish number, mean selected wish number, ...).
 - Notifications (ex: when the form opens, 1 day before the form ends, when the results are available, ...) → configurable by the admin.
 
 ## Design
