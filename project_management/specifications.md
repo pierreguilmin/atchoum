@@ -49,15 +49,17 @@ Every admin needs to have an account on the website.
 Supports and participants don't need to create an account.
 
 ### Form sharing options
-How does an admin or a support share the form to participants ?
-- Issue with a link: how do you uniquely identify someone who uses the link to access the form?
-- Send an email to a list of email adresses.
-- QR Code (then you can send a picture to someone instead of a link).
+How does an admin or a support share the form to participants ? We distinguish two use-case.
+
+**:unlock: Unsecure** If the admin trusts every participants to fill the form once and only once with his correct identification information. Then a unique link to the form is created and shared, and the form includes a way for participants to give their identity (for example via a name text field). This is the Google Forms way.
+
+**:lock: Secure** If the admin wants to be sure that every participant can only produce a unique and securely identified response to the form. Then we identify participants by their email adresses, and each participant receives a unique and personal tokened url allowing him to fill the form under his identity.
 
 ## Additional functionalities
 - Categories description or even caterogies name can have images, formated text, ...
 - Statistics after the repartition (worst selected wish number, mean selected wish number, ...).
 - Notifications (ex: when the form opens, 1 day before the form ends, when the results are available, ...) → configurable by the admin.
+- Propose a QR Code along with the link for the unsecure sharing use case.
 
 ## Design
 Interactive and innovative design. Simple, light, straightforward (like [WeTransfer](https://wetransfer.com/) or [Google Forms](https://docs.google.com/forms/)).
