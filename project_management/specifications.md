@@ -33,6 +33,7 @@ Three different roles described underneath: **administrator** (later called *adm
 | Form creation                        | :white_check_mark: |                    |             |
 | Form parameters                      | :white_check_mark: |                    |             |
 | Change user role*                    | :white_check_mark: |                    |             |
+| Form sharing mode                    | :white_check_mark: |                    |             |
 | Form modification                    | :white_check_mark: | :question:         |             |
 | Form closing                         | :white_check_mark: | :question:         |             |
 | Share the form to a given email      | :white_check_mark: | :white_check_mark: |             |
@@ -48,12 +49,15 @@ Three different roles described underneath: **administrator** (later called *adm
 Every admin needs to have an account on the website.  
 Supports and participants don't need to create an account.
 
-### Form sharing options
-How does an admin or a support share the form to participants ? We distinguish two use-case.
+### Form sharing
+How does an admin or a support share the form to participants ? We distinguish two use case.
 
-**:unlock: Unsecure** If the admin trusts every participants to fill the form once and only once with his correct identification information. Then a unique link to the form is created and shared, and the form includes a way for participants to give their identity (for example via a name text field). This is the Google Forms way.
+**:lock: Secure - via a list of email adresses** Any admin or support share the form to a list of email adresses. Each participant receives a personal tokened url by email, allowing him to fill the form under his identity.
 
-**:lock: Secure** If the admin wants to be sure that every participant can only produce a unique and securely identified response to the form. Then we identify participants by their email adresses, and each participant receives a unique and personal tokened url allowing him to fill the form under his identity.
+**:unlock: Unsecure - via a global sharing link** A global sharink link can be shared to anyone. When a new participant accesses the form, he has to give his email adress before submitting the form. He then receives an email with a personal tokened url. If a participant gives an already used email adress, he can't submit the form.  
+:warning: A global sharing link may cause two problems. First, unknown participants can fill the form. Second, someone can fill the form using someone's else email adress, giving that this person didn't fill the form yet.
+
+:information_source: For both use case, the personal url can be used by the participant to view and modify his wishes list, after the form has been submitted for the first time.
 
 ## Additional functionalities
 - Categories description or even caterogies name can have images, formated text, ...
